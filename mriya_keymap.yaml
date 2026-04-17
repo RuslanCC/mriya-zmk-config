@@ -1,0 +1,220 @@
+layout: {zmk_keyboard: mriya}
+layers:
+  Base:
+  - ESC
+  - Q
+  - W
+  - E
+  - R
+  - {t: T, h: '`'}
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '['
+  - TAB
+  - {t: A, h: LALT}
+  - {t: S, h: LGUI}
+  - {t: D, h: LCTRL}
+  - {t: F, h: LSHFT}
+  - G
+  - H
+  - {t: J, h: RSHFT}
+  - {t: K, h: RCTRL}
+  - {t: L, h: RGUI}
+  - {t: ;, h: RALT}
+  - ''''
+  - '-'
+  - {t: Z, h: Gui+Z}
+  - {t: X, h: Gui+X}
+  - {t: C, h: Gui+C}
+  - {t: V, h: Gui+V}
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ']'
+  - SPACE
+  - L1
+  - TAB
+  - RET
+  - L2
+  - BSPC
+  L1:
+  - ''
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - '7'
+  - '8'
+  - '9'
+  - F11
+  - F12
+  - ''
+  - LALT
+  - LGUI
+  - LCTRL
+  - LSHFT
+  - F10
+  - KP STAR
+  - '4'
+  - '5'
+  - '6'
+  - '0'
+  - .
+  - ''
+  - MUTE
+  - VOL DN
+  - VOL UP
+  - PP
+  - NEXT
+  - /
+  - '1'
+  - '2'
+  - '3'
+  - +
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - L3
+  - ''
+  L2:
+  - ''
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
+  - ''
+  - ''
+  - LALT
+  - LGUI
+  - LCTRL
+  - LSHFT
+  - '|'
+  - '`'
+  - '{'
+  - '}'
+  - '['
+  - ']'
+  - '"'
+  - ''
+  - \
+  - <
+  - '>'
+  - '~'
+  - _
+  - Gui+Sft+3
+  - '-'
+  - '='
+  - /
+  - '?'
+  - ''
+  - ''
+  - L3
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  L3:
+  - ''
+  - Gui+`
+  - '&mkp RCLK'
+  - '&mmv MOVE_UP'
+  - '&mkp LCLK'
+  - '&mkp MCLK'
+  - PG UP
+  - HOME
+  - UP
+  - END
+  - Gui+Sft+TAB
+  - Gui+TAB
+  - ''
+  - LALT
+  - LGUI
+  - LCTRL
+  - LSHFT
+  - '&msc SCRL_UP'
+  - PG DN
+  - LEFT
+  - DOWN
+  - RIGHT
+  - '&msc SCRL_UP'
+  - Gui+SPACE
+  - {t: L4, h: toggle}
+  - Alt+LEFT
+  - Gui+LEFT
+  - Gui+RIGHT
+  - Alt+RIGHT
+  - '&msc SCRL_DOWN'
+  - Gui+Sft+8
+  - Ctl+LEFT
+  - Ctl+RIGHT
+  - F11
+  - '&msc SCRL_DOWN'
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  L4:
+  - '&sys_reset'
+  - '&bootloader'
+  - ''
+  - ''
+  - ''
+  - {t: BT, h: '0'}
+  - {t: BT, h: '3'}
+  - ''
+  - ''
+  - ''
+  - '&bootloader'
+  - '&sys_reset'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: BT, h: '1'}
+  - {t: BT, h: '4'}
+  - '&mail'
+  - '&yandex'
+  - '&telegram'
+  - '&mailmgpu'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT CLR
+  - {t: BT, h: '2'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT CLR
+  - '&studio_unlock'
+  - ''
+  - {t: Base, h: toggle}
+  - ''
+  - ''
+  - {t: Base, h: toggle}
+  - ''
+combos:
+- p: [1, 2]
+  k: '&studio_unlock'
