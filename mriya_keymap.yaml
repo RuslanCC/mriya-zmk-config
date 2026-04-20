@@ -15,14 +15,14 @@ layers:
   - '['
   - TAB
   - {t: A, h: LALT}
-  - {t: S, h: LGUI}
-  - {t: D, h: LCTRL}
+  - {t: S, h: LCTRL}
+  - {t: D, h: LGUI}
   - {t: F, h: LSHFT}
   - G
   - H
   - {t: J, h: RSHFT}
-  - {t: K, h: RCTRL}
-  - {t: L, h: RGUI}
+  - {t: K, h: RGUI}
+  - {t: L, h: RCTRL}
   - {t: ;, h: RALT}
   - ''''
   - '-'
@@ -58,8 +58,8 @@ layers:
   - F12
   - ''
   - LALT
-  - LGUI
   - LCTRL
+  - LGUI
   - LSHFT
   - F10
   - KP STAR
@@ -101,8 +101,8 @@ layers:
   - ''
   - ''
   - LALT
-  - LGUI
   - LCTRL
+  - LGUI
   - LSHFT
   - '|'
   - '`'
