@@ -175,7 +175,7 @@
 // ┌──────┬──────┬──────┬──────┬──────┬──────┐     ┌──────┬──────┬──────┬──────┬──────┬──────┐
 // │      │  !   │  @   │  #   │  $   │  %   │     │  ^   │  &   │  *   │  (   │  )   │      │
 // ├──────┼──────┼──────┼──────┼──────┼──────┤     ├──────┼──────┼──────┼──────┼──────┼──────┤
-// │      │ Alt  │ Ctrl │ Cmd  │ Shift│  |   │     │  `   │  {   │  }   │  [   │  ]   │  "   │
+// │      │ Alt  │ Ctrl │ Cmd  │ Shift│  |   │     │  `   │  {   │  }   │  [   │,(ru) │  "   │
 // ├──────┼──────┼──────┼──────┼──────┼──────┤     ├──────┼──────┼──────┼──────┼──────┼──────┤
 // │      │  \   │  <   │  >   │  ~   │  _   │     │  №   │  -   │  =   │  /   │  ?   │      │
 // └──────┴──────┴──────┴──┬───┴──┬───┴──┬───┘     └──┬───┴──┬───┴──┬───┴──────┴──────┴──────┘
@@ -184,7 +184,7 @@
 // (№ = ⌘⇧3 в русской раскладке macOS)
             bindings = <
 &none   &kp EXCL   &kp AT     &kp HASH   &kp DLLR    &kp PRCNT    &kp CARET      &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR   &none
-&none   &kp LALT   &kp LCTRL  &kp LGUI   &kp LSHFT   &kp PIPE     &kp GRAVE      &kp LBRC   &kp RBRC   &kp LBKT  &kp RBKT   &kp DQT
+&none   &kp LALT   &kp LCTRL  &kp LGUI   &kp LSHFT   &kp PIPE     &kp GRAVE      &kp LBRC   &kp RBRC   &kp LBKT  &kp LS(FSLH)  &kp DQT
 &none   &kp BSLH   &kp LT     &kp GT     &kp TILDE   &kp UNDER    &kp LG(LS(N3)) &kp MINUS  &kp EQUAL  &kp FSLH  &kp QMARK  &none
                               &none      &mo 3       &none        &none          &trans     &none
             >;
