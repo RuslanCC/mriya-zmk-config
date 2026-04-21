@@ -1,8 +1,30 @@
 # Copyright (c) 2020 Pete Johanson
 # SPDX-License-Identifier: MIT
 
-config SHIELD_MRIYA_LEFT
-    def_bool $(shields_list_contains,mriya_left)
+config SHIELD_MRIYA_DONGLE
+    def_bool $(shields_list_contains,mriya_dongle)
 
-config SHIELD_MRIYA_RIGHT
-    def_bool $(shields_list_contains,mriya_right)
+config SHIELD_MRIYA_LEFT_MAIN
+    def_bool $(shields_list_contains,mriya_left_main)
+
+config SHIELD_MRIYA_LEFT_MAIN_DISPLAY
+    def_bool $(shields_list_contains,mriya_left_main_display)
+
+config SHIELD_MRIYA_LEFT_SECONDARY
+    def_bool $(shields_list_contains,mriya_left_secondary)
+
+config SHIELD_MRIYA_LEFT_SECONDARY_DISPLAY
+    def_bool $(shields_list_contains,mriya_left_secondary_display)
+
+config SHIELD_MRIYA_RIGHT_MAIN
+    def_bool $(shields_list_contains,mriya_right_main)
+
+config SHIELD_MRIYA_RIGHT_MAIN_DISPLAY
+    def_bool $(shields_list_contains,mriya_right_main_display)
+
+config SHIELD_MRIYA_RIGHT_SECONDARY
+    def_bool $(shields_list_contains,mriya_right_secondary)
+
+config SHIELD_MRIYA_RIGHT_SECONDARY_DISPLAY
+    def_bool $(shields_list_contains,mriya_right_secondary_display)
+
