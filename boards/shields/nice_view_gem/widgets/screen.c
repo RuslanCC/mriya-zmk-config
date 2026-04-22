@@ -199,12 +199,9 @@ static void set_lastkeys_status(struct zmk_widget_screen *widget,
     if (!state.pressed) {
         return;
     }
-    if (state.usage_page != HID_USAGE_KEY) {
-        return;
-    }
 
     char single_buf[2];
-    const char *tok = hid_to_token(state.keycode, state.mods, single_buf);
+    const char *tok = hid_to_token(state.usage_page, state.keycode, state.mods, single_buf);
     if (!tok) {
         return;
     }
@@ -261,6 +258,10 @@ int zmk_widget_screen_init(struct zmk_widget_screen *widget, lv_obj_t *parent) {
     widget_layer_status_init();
     widget_output_status_init();
     widget_lastkeys_status_init();
+
+    /* Force initial paint of middle canvas so "KEYS" header is visible
+       before any keypress arrives. */
+    draw_middle(widget->obj, widget->cbuf2, &widget->state);
 
     return 0;
 }

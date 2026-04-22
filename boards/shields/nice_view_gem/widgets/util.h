@@ -10,7 +10,7 @@
 #define BUFFER_OFFSET_MIDDLE -44
 #define BUFFER_OFFSET_BOTTOM -129
 
-#define LASTKEYS_BUF_LEN 12
+#define LASTKEYS_BUF_LEN 9
 
 #define LVGL_BACKGROUND                                                                            \
     IS_ENABLED(CONFIG_NICE_VIEW_WIDGET_INVERTED) ? lv_color_black() : lv_color_white()
