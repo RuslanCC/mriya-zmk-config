@@ -35,8 +35,10 @@ static const char *keyboard_token(uint32_t kc, uint8_t mods, char single_buf[2])
         single_buf[1] = '\0';
         return single_buf;
     }
-    if (kc == 0x2C) {
-        return "SPC";
+    if (kc == 0x2C) { /* Space */
+        single_buf[0] = ' ';
+        single_buf[1] = '\0';
+        return single_buf;
     }
 
     switch (kc) {
