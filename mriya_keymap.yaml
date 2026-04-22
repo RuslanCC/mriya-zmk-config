@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - '['
-  - TAB
+  - CAPS
   - {t: A, h: LALT}
   - {t: S, h: LCTRL}
   - {t: D, h: LGUI}
@@ -67,7 +67,7 @@ layers:
   - '5'
   - '6'
   - '0'
-  - .
+  - Sft+/
   - ''
   - MUTE
   - VOL DN
@@ -98,7 +98,7 @@ layers:
   - '*'
   - (
   - )
-  - ''
+  - ']'
   - ''
   - LALT
   - LCTRL
