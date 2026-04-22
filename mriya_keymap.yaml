@@ -67,7 +67,7 @@ layers:
   - '5'
   - '6'
   - '0'
-  - Sft+/
+  - +
   - ''
   - MUTE
   - VOL DN
@@ -78,7 +78,7 @@ layers:
   - '1'
   - '2'
   - '3'
-  - +
+  - Sft+/
   - Sft+7
   - ''
   - {type: held}

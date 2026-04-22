@@ -155,16 +155,16 @@
 // ┌──────┬──────┬──────┬──────┬──────┬──────┐     ┌──────┬──────┬──────┬──────┬──────┬──────┐
 // │      │ F1   │ F2   │ F3   │ F4   │ F5   │     │ F6   │  7   │  8   │  9   │ F11  │!(ru) │
 // ├──────┼──────┼──────┼──────┼──────┼──────┤     ├──────┼──────┼──────┼──────┼──────┼──────┤
-// │      │ Alt  │ Ctrl │ Cmd  │ Shift│ F10  │     │  *   │  4   │  5   │  6   │  0   │,(ru) │
+// │      │ Alt  │ Ctrl │ Cmd  │ Shift│ F10  │     │  *   │  4   │  5   │  6   │  0   │  +   │
 // ├──────┼──────┼──────┼──────┼──────┼──────┤     ├──────┼──────┼──────┼──────┼──────┼──────┤
-// │      │Mute  │Vol-  │Vol+  │Play  │Next  │     │  /   │  1   │  2   │  3   │  +   │?(ru) │
+// │      │Mute  │Vol-  │Vol+  │Play  │Next  │     │  /   │  1   │  2   │  3   │,(ru) │?(ru) │
 // └──────┴──────┴──────┴──┬───┴──┬───┴──┬───┘     └──┬───┴──┬───┴──┬───┴──────┴──────┴──────┘
 //                         │      │Trns  │      │     │      │ L3   │      │
 //                         └──────┴──────┴──────┘     └──────┴──────┴──────┘
             bindings = <
 &none   &kp F1      &kp F2        &kp F3        &kp F4        &kp F5      &kp F6       &kp N7  &kp N8  &kp N9     &kp F11  &kp LS(N1)
-&none   &kp LALT    &kp LCTRL     &kp LGUI      &kp LSHFT     &kp F10     &kp KP_ASTERISK  &kp N4  &kp N5  &kp N6     &kp N0   &kp LS(FSLH)
-&none   &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP      &kp C_NEXT  &kp FSLH     &kp N1  &kp N2  &kp N3     &kp PLUS &kp LS(N7)
+&none   &kp LALT    &kp LCTRL     &kp LGUI      &kp LSHFT     &kp F10     &kp KP_ASTERISK  &kp N4  &kp N5  &kp N6     &kp N0   &kp PLUS
+&none   &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP      &kp C_NEXT  &kp FSLH     &kp N1  &kp N2  &kp N3     &kp LS(FSLH) &kp LS(N7)
                                   &none         &trans        &none       &none        &mo 3   &none
             >;
         };
