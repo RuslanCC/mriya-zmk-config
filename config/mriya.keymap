@@ -167,7 +167,7 @@
 // ├──────┼──────┼──────┼──────┼──────┼──────┤     ├──────┼──────┼──────┼──────┼──────┼──────┤
 // │      │ Alt  │ Ctrl │ Cmd  │ Shift│  |   │     │  `   │  {   │  }   │  (   │  )   │  "   │
 // ├──────┼──────┼──────┼──────┼──────┼──────┤     ├──────┼──────┼──────┼──────┼──────┼──────┤
-// │      │  \   │  <   │  >   │  ~   │ 🌐   │     │ Scrn │  -   │  =   │  /   │  ?   │  +   │
+// │      │  \   │  <   │  >   │  ~   │ 😀   │     │ Scrn │  -   │  =   │  /   │  ?   │  +   │
 // └──────┴──────┴──────┴──┬───┴──┬───┴──┬───┘     └──┬───┴──┬───┴──┬───┴──────┴──────┴──────┘
 //                         │      │ L3   │      │     │      │Trns  │      │
 //                         └──────┴──────┴──────┘     └──────┴──────┴──────┘
@@ -175,7 +175,7 @@
             bindings = <
 &none   &kp EXCL   &kp AT     &kp HASH   &kp DLLR    &kp PRCNT    &kp CARET      &kp AMPS   &kp ASTRK  &kp LBKT  &kp RBKT   &kp UNDER
 &none   &kp LALT   &kp LCTRL  &kp LGUI   &kp LSHFT   &kp PIPE     &kp GRAVE      &kp LBRC   &kp RBRC   &kp LPAR  &kp RPAR      &kp DQT
-&none   &kp BSLH   &kp LT     &kp GT     &kp TILDE   &kp GLOBE    &kp LC(LG(N9)) &kp MINUS  &kp EQUAL  &kp FSLH  &kp QMARK  &kp PLUS
+&none   &kp BSLH   &kp LT     &kp GT     &kp TILDE   &kp LC(LG(SPACE)) &kp LC(LG(N9)) &kp MINUS  &kp EQUAL  &kp FSLH  &kp QMARK  &kp PLUS
                               &none      &mo 3       &none        &none          &trans     &none
             >;
         };

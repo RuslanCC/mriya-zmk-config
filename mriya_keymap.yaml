@@ -116,7 +116,7 @@ layers:
   - <
   - '>'
   - '~'
-  - 🌐 Fn
+  - {t: 😀, type: macro}
   - {t: 📸, type: macro}
   - '-'
   - '='

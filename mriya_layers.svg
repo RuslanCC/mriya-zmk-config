@@ -607,11 +607,9 @@ g.layer-L1 g.keypos-35 text.tap {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">~</text>
 </g>
-<g transform="translate(312, 180) rotate(5.0)" class="key keypos-29">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">🌐</tspan><tspan x="0" dy="1.2em">Fn</tspan>
-</text>
+<g transform="translate(312, 180) rotate(5.0)" class="key macro keypos-29">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key macro"/>
+<text x="0" y="0" class="key macro tap">😀</text>
 </g>
 <g transform="translate(503, 180) rotate(-5.0)" class="key macro keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key macro"/>

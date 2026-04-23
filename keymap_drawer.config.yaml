@@ -35,7 +35,7 @@ parse_config:
     "&kp LS(N1)": {t: "!"}
     "&kp LS(FSLH)": {t: ","}
     "&kp LS(N7)": {t: "?"}
-    "&kp GLOBE": {t: "🌐 Fn"}
+    "&kp LC(LG(SPACE))": {t: "😀", type: macro}
     "&out OUT_TOG": {t: "USB⇄BT", type: system}
     "&kp LG(TAB)": {t: "app ▶", type: mouse}
     "&kp LG(LS(TAB))": {t: "◀ app", type: mouse}
