@@ -12,6 +12,10 @@ draw_config:
       fill: #d7263d;
       font-weight: bold;
     }
+    g.layer-L1 text.shifted {
+      fill: #d7263d;
+      font-weight: bold;
+    }
 
 parse_config:
   raw_binding_map:
@@ -35,6 +39,16 @@ parse_config:
     "&kp LS(N1)": {t: "!"}
     "&kp LS(FSLH)": {t: ","}
     "&kp LS(N7)": {t: "?"}
+    "&kp N0": {t: "0", s: ")"}
+    "&kp N1": {t: "1", s: "!"}
+    "&kp N2": {t: "2", s: "\""}
+    "&kp N3": {t: "3", s: "№"}
+    "&kp N4": {t: "4", s: ";"}
+    "&kp N5": {t: "5", s: "%"}
+    "&kp N6": {t: "6", s: ":"}
+    "&kp N7": {t: "7", s: "?"}
+    "&kp N8": {t: "8", s: "*"}
+    "&kp N9": {t: "9", s: "("}
     "&kp LC(LG(SPACE))": {t: "😀", type: macro}
     "&out OUT_TOG": {t: "USB⇄BT", type: system}
     "&kp LG(TAB)": {t: "app ▶", type: mouse}
