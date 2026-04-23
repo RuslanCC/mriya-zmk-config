@@ -36,6 +36,7 @@ parse_config:
     "&kp LS(FSLH)": {t: ","}
     "&kp LS(N7)": {t: "?"}
     "&kp GLOBE": {t: "🌐 Fn"}
+    "&out OUT_TOG": {t: "USB⇄BT", type: system}
     "&kp LG(TAB)": {t: "app ▶", type: mouse}
     "&kp LG(LS(TAB))": {t: "◀ app", type: mouse}
     "&kp LA(LEFT)": {t: "← word", type: mouse}

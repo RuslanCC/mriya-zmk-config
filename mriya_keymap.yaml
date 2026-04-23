@@ -177,7 +177,7 @@ layers:
   - ''
   - ''
   - ''
-  - OUT TOG
+  - {t: USB⇄BT, type: system}
   - {t: BT, h: '0'}
   - {t: BT, h: '3'}
   - F7
