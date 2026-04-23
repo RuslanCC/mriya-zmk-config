@@ -86,17 +86,6 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        // Studio unlock on Q+W (positions shifted by outer pinky column: 1, 2)
-        combo_studio_unlock {
-            timeout-ms = <50>;
-            key-positions = <1 2>;
-            bindings = <&studio_unlock>;
-        };
-    };
-
     macros {
         mail: mail {
             compatible = "zmk,behavior-macro";
@@ -175,40 +164,38 @@
 // ┌──────┬──────┬──────┬──────┬──────┬──────┐     ┌──────┬──────┬──────┬──────┬──────┬──────┐
 // │      │  !   │  @   │  #   │  $   │  %   │     │  ^   │  &   │  *   │  (   │  )   │  ]   │
 // ├──────┼──────┼──────┼──────┼──────┼──────┤     ├──────┼──────┼──────┼──────┼──────┼──────┤
-// │      │ Alt  │ Ctrl │ Cmd  │ Shift│  |   │     │  `   │  {   │  }   │  [   │,(ru) │  "   │
+// │      │ Alt  │ Ctrl │ Cmd  │ Shift│  |   │     │  `   │  {   │  }   │  [   │  ]   │  "   │
 // ├──────┼──────┼──────┼──────┼──────┼──────┤     ├──────┼──────┼──────┼──────┼──────┼──────┤
-// │      │  \   │  <   │  >   │  ~   │  _   │     │  №   │  -   │  =   │  /   │  ?   │      │
+// │      │  \   │  <   │  >   │  ~   │  _   │     │ Scrn │  -   │  =   │  /   │  ?   │  +   │
 // └──────┴──────┴──────┴──┬───┴──┬───┴──┬───┘     └──┬───┴──┬───┴──┬───┴──────┴──────┴──────┘
 //                         │      │ L3   │      │     │      │Trns  │      │
 //                         └──────┴──────┴──────┘     └──────┴──────┴──────┘
 // (№ = ⌘⇧3 в русской раскладке macOS)
             bindings = <
 &none   &kp EXCL   &kp AT     &kp HASH   &kp DLLR    &kp PRCNT    &kp CARET      &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR   &kp RBKT
-&none   &kp LALT   &kp LCTRL  &kp LGUI   &kp LSHFT   &kp PIPE     &kp GRAVE      &kp LBRC   &kp RBRC   &kp LBKT  &kp LS(FSLH)  &kp DQT
-&none   &kp BSLH   &kp LT     &kp GT     &kp TILDE   &kp UNDER    &kp LG(LS(N3)) &kp MINUS  &kp EQUAL  &kp FSLH  &kp QMARK  &none
+&none   &kp LALT   &kp LCTRL  &kp LGUI   &kp LSHFT   &kp PIPE     &kp GRAVE      &kp LBRC   &kp RBRC   &kp LBKT  &kp RBKT      &kp DQT
+&none   &kp BSLH   &kp LT     &kp GT     &kp TILDE   &kp UNDER    &kp LC(LG(N9)) &kp MINUS  &kp EQUAL  &kp FSLH  &kp QMARK  &kp PLUS
                               &none      &mo 3       &none        &none          &trans     &none
             >;
         };
 
         layer_3 {
             display-name = "L3";
-// NAVIGATION / MOUSE / WINDOW (Mac)
+// MOUSE (left) / NAVIGATION (right)
 // ┌──────┬──────┬──────┬──────┬──────┬──────┐     ┌──────┬──────┬──────┬──────┬──────┬──────┐
-// │      │⌘`    │RClk  │ M↑   │LClk  │MClk  │     │PgUp  │Home  │ ↑    │End   │⌘⇧Tab │⌘Tab  │
+// │      │ MB5  │RClk  │ M↑   │LClk  │Scr↑  │     │      │Home  │ ↑    │End   │PgUp  │⌘Tab  │
 // ├──────┼──────┼──────┼──────┼──────┼──────┤     ├──────┼──────┼──────┼──────┼──────┼──────┤
-// │      │ Alt  │Ctrl  │ Cmd  │Shift │Scr↑  │     │PgDn  │ ←    │ ↓    │ →    │Scr↑  │⌘Spc  │
+// │      │ MB4  │ M←   │ M↓   │ M→   │Scr↓  │     │      │ ←    │ ↓    │ →    │PgDn  │⌘⇧Tab │
 // ├──────┼──────┼──────┼──────┼──────┼──────┤     ├──────┼──────┼──────┼──────┼──────┼──────┤
-// │ToL4  │⌥←    │⌘←    │⌘→    │⌥→    │Scr↓  │     │ ₽    │⌃←    │⌃→    │F11   │Scr↓  │      │
+// │ToL4  │      │      │MClk  │      │      │     │      │⌥←    │⌘←    │⌘→    │⌥→    │      │
 // └──────┴──────┴──────┴──┬───┴──┬───┴──┬───┘     └──┬───┴──┬───┴──┬───┴──────┴──────┴──────┘
 //                         │      │Trns  │      │     │      │Trns  │      │
 //                         └──────┴──────┴──────┘     └──────┴──────┴──────┘
-// (₽ = ⌘⇧8 в русской раскладке macOS)
-// (⌃← / ⌃→ = переключение Spaces на Mac)
             bindings = <
-&none   &kp LG(GRAVE)     &mkp RCLK         &mmv MOVE_UP     &mkp LCLK         &mkp MCLK        &kp PG_UP        &kp HOME      &kp UP         &kp END           &kp LG(LS(TAB))  &kp LG(TAB)
-&none   &kp LALT          &kp LGUI          &kp LCTRL        &kp LSHFT         &msc SCRL_UP     &kp PG_DN        &kp LEFT      &kp DOWN       &kp RIGHT         &msc SCRL_UP     &kp LG(SPACE)
-&to 4   &kp LA(LEFT)      &kp LG(LEFT)      &kp LG(RIGHT)    &kp LA(RIGHT)     &msc SCRL_DOWN   &kp LG(LS(N8))   &kp LC(LEFT)  &kp LC(RIGHT)  &kp F11           &msc SCRL_DOWN   &none
-                                            &none            &trans            &none            &none            &trans        &none
+&none   &mkp MB5    &mkp RCLK     &mmv MOVE_UP     &mkp LCLK      &msc SCRL_UP     &none   &kp HOME       &kp UP        &kp END          &kp PG_UP     &kp LG(TAB)
+&none   &mkp MB4    &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_RIGHT &msc SCRL_DOWN  &none   &kp LEFT       &kp DOWN      &kp RIGHT        &kp PG_DN     &kp LG(LS(TAB))
+&to 4   &none       &none         &mkp MCLK        &none          &none            &none   &kp LA(LEFT)   &kp LG(LEFT)  &kp LG(RIGHT)    &kp LA(RIGHT) &none
+                                  &none            &trans         &none            &none   &trans         &none
             >;
         };
 
@@ -216,18 +203,18 @@
             display-name = "L4";
 // SYSTEM / BLUETOOTH / MACROS
 // ┌──────┬──────┬──────┬──────┬──────┬──────┐     ┌──────┬──────┬──────┬──────┬──────┬──────┐
-// │Reset │Boot  │      │      │      │ BT1  │     │ BT4  │      │      │      │Boot  │Reset │
+// │      │      │      │      │OutTg │ BT1  │     │ BT4  │      │      │      │      │      │
 // ├──────┼──────┼──────┼──────┼──────┼──────┤     ├──────┼──────┼──────┼──────┼──────┼──────┤
 // │      │      │      │      │      │ BT2  │     │ BT5  │📧mail│📧ya  │📧tg  │📧mgpu│      │
 // ├──────┼──────┼──────┼──────┼──────┼──────┤     ├──────┼──────┼──────┼──────┼──────┼──────┤
-// │      │      │      │      │BTclr │ BT3  │     │      │      │      │      │BTclr │Unlock│
+// │      │      │      │      │BTclr │ BT3  │     │      │      │      │      │BTclrA│      │
 // └──────┴──────┴──────┴──┬───┴──┬───┴──┬───┘     └──┬───┴──┬───┴──┬───┴──────┴──────┴──────┘
 //                         │      │ToL0  │      │     │      │ToL0  │      │
 //                         └──────┴──────┴──────┘     └──────┴──────┴──────┘
             bindings = <
-&sys_reset  &bootloader  &none  &none  &none        &bt BT_SEL 0      &bt BT_SEL 3  &none       &none       &none          &bootloader  &sys_reset
-&none       &none        &none  &none  &none        &bt BT_SEL 1      &bt BT_SEL 4  &mail       &yandex     &telegram      &mailmgpu    &none
-&none       &none        &none  &none  &bt BT_CLR   &bt BT_SEL 2      &none         &none       &none       &none          &bt BT_CLR   &studio_unlock
+&none       &none        &none  &none  &out OUT_TOG &bt BT_SEL 0      &bt BT_SEL 3  &none       &none       &none          &none           &none
+&none       &none        &none  &none  &none        &bt BT_SEL 1      &bt BT_SEL 4  &mail       &yandex     &telegram      &mailmgpu       &none
+&none       &none        &none  &none  &bt BT_CLR   &bt BT_SEL 2      &none         &none       &none       &none          &bt BT_CLR_ALL  &none
                                 &none  &to 0        &none             &none         &to 0       &none
             >;
         };

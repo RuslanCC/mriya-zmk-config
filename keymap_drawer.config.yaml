@@ -1,0 +1,126 @@
+draw_config:
+  svg_extra_style: |
+    g.keypos-13 rect.key, g.keypos-14 rect.key, g.keypos-15 rect.key, g.keypos-16 rect.key,
+    g.keypos-19 rect.key, g.keypos-20 rect.key, g.keypos-21 rect.key, g.keypos-22 rect.key {
+      fill: #e6f2ff;
+      stroke: #5a9fe0;
+      stroke-width: 1.5;
+    }
+    g.layer-L1 g.keypos-11 text.tap,
+    g.layer-L1 g.keypos-34 text.tap,
+    g.layer-L1 g.keypos-35 text.tap {
+      fill: #d7263d;
+      font-weight: bold;
+    }
+
+parse_config:
+  raw_binding_map:
+    "&mkp LCLK": {t: "LClk", type: mouse}
+    "&mkp RCLK": {t: "RClk", type: mouse}
+    "&mkp MCLK": {t: "MClk", type: mouse}
+    "&mkp MB4": {t: "◀ Back", type: mouse}
+    "&mkp MB5": {t: "Fwd ▶", type: mouse}
+    "&mmv MOVE_UP": {t: "▲", type: mouse}
+    "&mmv MOVE_DOWN": {t: "▼", type: mouse}
+    "&mmv MOVE_LEFT": {t: "◀", type: mouse}
+    "&mmv MOVE_RIGHT": {t: "▶", type: mouse}
+    "&msc SCRL_UP": {t: "Scr ▲", type: mouse}
+    "&msc SCRL_DOWN": {t: "Scr ▼", type: mouse}
+    "&msc SCRL_LEFT": {t: "Scr ◀", type: mouse}
+    "&msc SCRL_RIGHT": {t: "Scr ▶", type: mouse}
+    "&sys_reset": {t: "Reset", type: system}
+    "&bootloader": {t: "Boot", type: system}
+    "&studio_unlock": {t: "Unlock", type: system}
+    "&kp LC(LG(N9))": {t: "📸", type: macro}
+    "&kp LS(N1)": {t: "!"}
+    "&kp LS(FSLH)": {t: ","}
+    "&kp LS(N7)": {t: "?"}
+    "&kp LG(TAB)": {t: "⌘⇥", type: mouse}
+    "&kp LG(LS(TAB))": {t: "⌘⇧⇥", type: mouse}
+    "&kp LA(LEFT)": {t: "⌥ word ←", type: mouse}
+    "&kp LA(RIGHT)": {t: "word → ⌥", type: mouse}
+    "&kp LG(LEFT)": {t: "⌘ line ←", type: mouse}
+    "&kp LG(RIGHT)": {t: "line → ⌘", type: mouse}
+    "&mail": {t: "✉ mail", type: macro}
+    "&yandex": {t: "✉ ya", type: macro}
+    "&telegram": {t: "✉ tg", type: macro}
+    "&mailmgpu": {t: "✉ mgpu", type: macro}
+  zmk_keycode_map:
+    UP: "↑"
+    DOWN: "↓"
+    LEFT: "←"
+    RIGHT: "→"
+    HOME: "Home"
+    END: "End"
+    PG_UP: "PgUp"
+    PG_DN: "PgDn"
+    RET: "↵"
+    RETURN: "↵"
+    ENTER: "↵"
+    ESC: "Esc"
+    ESCAPE: "Esc"
+    TAB: "⇥"
+    BSPC: "⌫"
+    BACKSPACE: "⌫"
+    DEL: "⌦"
+    DELETE: "⌦"
+    SPACE: "␣"
+    CAPS: "Caps"
+    CAPSLOCK: "Caps"
+    LSHFT: "⇧"
+    RSHFT: "⇧"
+    LSHIFT: "⇧"
+    RSHIFT: "⇧"
+    LCTRL: "⌃"
+    RCTRL: "⌃"
+    LALT: "⌥"
+    RALT: "⌥"
+    LGUI: "⌘"
+    RGUI: "⌘"
+    C_MUTE: "🔇"
+    C_VOL_UP: "🔊+"
+    C_VOL_DN: "🔊−"
+    C_PP: "⏯"
+    C_NEXT: "⏭"
+    C_PREV: "⏮"
+    KP_ASTERISK: "*"
+    ASTRK: "*"
+    ASTERISK: "*"
+    AMPS: "&"
+    AMPERSAND: "&"
+    PIPE: "|"
+    UNDER: "_"
+    UNDERSCORE: "_"
+    TILDE: "~"
+    GRAVE: "`"
+    BSLH: "\\"
+    BACKSLASH: "\\"
+    FSLH: "/"
+    SLASH: "/"
+    SEMI: ";"
+    SEMICOLON: ";"
+    SQT: "'"
+    APOSTROPHE: "'"
+    DQT: "\""
+    DOUBLE_QUOTES: "\""
+    LBKT: "["
+    RBKT: "]"
+    LBRC: "{"
+    RBRC: "}"
+    LPAR: "("
+    RPAR: ")"
+    LT: "<"
+    GT: ">"
+    EXCL: "!"
+    AT: "@"
+    HASH: "#"
+    DLLR: "$"
+    PRCNT: "%"
+    CARET: "^"
+    PLUS: "+"
+    MINUS: "-"
+    EQUAL: "="
+    QMARK: "?"
+    COMMA: ","
+    DOT: "."
+    COLON: ":"
