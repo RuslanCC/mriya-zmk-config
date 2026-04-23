@@ -35,12 +35,13 @@ parse_config:
     "&kp LS(N1)": {t: "!"}
     "&kp LS(FSLH)": {t: ","}
     "&kp LS(N7)": {t: "?"}
-    "&kp LG(TAB)": {t: "⌘⇥", type: mouse}
-    "&kp LG(LS(TAB))": {t: "⌘⇧⇥", type: mouse}
-    "&kp LA(LEFT)": {t: "⌥ word ←", type: mouse}
-    "&kp LA(RIGHT)": {t: "word → ⌥", type: mouse}
-    "&kp LG(LEFT)": {t: "⌘ line ←", type: mouse}
-    "&kp LG(RIGHT)": {t: "line → ⌘", type: mouse}
+    "&kp GLOBE": {t: "🌐 Fn"}
+    "&kp LG(TAB)": {t: "app ▶", type: mouse}
+    "&kp LG(LS(TAB))": {t: "◀ app", type: mouse}
+    "&kp LA(LEFT)": {t: "← word", type: mouse}
+    "&kp LA(RIGHT)": {t: "word →", type: mouse}
+    "&kp LG(LEFT)": {t: "← line", type: mouse}
+    "&kp LG(RIGHT)": {t: "line →", type: mouse}
     "&mail": {t: "✉ mail", type: macro}
     "&yandex": {t: "✉ ya", type: macro}
     "&telegram": {t: "✉ tg", type: macro}

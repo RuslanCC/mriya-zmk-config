@@ -531,15 +531,15 @@ g.layer-L1 g.keypos-35 text.tap {
 </g>
 <g transform="translate(660, 39) rotate(-5.0)" class="key keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">(</text>
+<text x="0" y="0" class="key tap">[</text>
 </g>
 <g transform="translate(718, 62) rotate(-5.0)" class="key keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">)</text>
+<text x="0" y="0" class="key tap">]</text>
 </g>
 <g transform="translate(775, 71) rotate(-5.0)" class="key keypos-11">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">]</text>
+<text x="0" y="0" class="key tap">_</text>
 </g>
 <g transform="translate(35, 127) rotate(5.0)" class="key keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -578,11 +578,11 @@ g.layer-L1 g.keypos-35 text.tap {
 </g>
 <g transform="translate(665, 95) rotate(-5.0)" class="key keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">[</text>
+<text x="0" y="0" class="key tap">(</text>
 </g>
 <g transform="translate(723, 118) rotate(-5.0)" class="key keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">]</text>
+<text x="0" y="0" class="key tap">)</text>
 </g>
 <g transform="translate(780, 127) rotate(-5.0)" class="key keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -609,7 +609,9 @@ g.layer-L1 g.keypos-35 text.tap {
 </g>
 <g transform="translate(312, 180) rotate(5.0)" class="key keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">_</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">🌐</tspan><tspan x="0" dy="1.2em">Fn</tspan>
+</text>
 </g>
 <g transform="translate(503, 180) rotate(-5.0)" class="key macro keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key macro"/>
@@ -706,9 +708,8 @@ g.layer-L1 g.keypos-35 text.tap {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">PgUp</text>
 </g>
-<g transform="translate(775, 71) rotate(-5.0)" class="key mouse keypos-11">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key mouse"/>
-<text x="0" y="0" class="key mouse tap">⌘⇥</text>
+<g transform="translate(775, 71) rotate(-5.0)" class="key keypos-11">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
 <g transform="translate(35, 127) rotate(5.0)" class="key keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -756,9 +757,8 @@ g.layer-L1 g.keypos-35 text.tap {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">PgDn</text>
 </g>
-<g transform="translate(780, 127) rotate(-5.0)" class="key mouse keypos-23">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key mouse"/>
-<text x="0" y="0" class="key mouse tap">⌘⇧⇥</text>
+<g transform="translate(780, 127) rotate(-5.0)" class="key keypos-23">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
 <g transform="translate(30, 183) rotate(5.0)" class="key keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -788,25 +788,25 @@ g.layer-L1 g.keypos-35 text.tap {
 <g transform="translate(558, 161) rotate(-5.0)" class="key mouse keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key mouse"/>
 <text x="0" y="0" class="key mouse tap">
-<tspan x="0" dy="-1.2em">⌥</tspan><tspan x="0" dy="1.2em">word</tspan><tspan x="0" dy="1.2em">←</tspan>
+<tspan x="0" dy="-0.6em">←</tspan><tspan x="0" dy="1.2em">word</tspan>
 </text>
 </g>
 <g transform="translate(613, 142) rotate(-5.0)" class="key mouse keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key mouse"/>
 <text x="0" y="0" class="key mouse tap">
-<tspan x="0" dy="-1.2em">⌘</tspan><tspan x="0" dy="1.2em">line</tspan><tspan x="0" dy="1.2em">←</tspan>
+<tspan x="0" dy="-0.6em">←</tspan><tspan x="0" dy="1.2em">line</tspan>
 </text>
 </g>
 <g transform="translate(670, 151) rotate(-5.0)" class="key mouse keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key mouse"/>
 <text x="0" y="0" class="key mouse tap">
-<tspan x="0" dy="-1.2em">line</tspan><tspan x="0" dy="1.2em">→</tspan><tspan x="0" dy="1.2em">⌘</tspan>
+<tspan x="0" dy="-0.6em">line</tspan><tspan x="0" dy="1.2em">→</tspan>
 </text>
 </g>
 <g transform="translate(728, 174) rotate(-5.0)" class="key mouse keypos-34">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key mouse"/>
 <text x="0" y="0" class="key mouse tap">
-<tspan x="0" dy="-1.2em">word</tspan><tspan x="0" dy="1.2em">→</tspan><tspan x="0" dy="1.2em">⌥</tspan>
+<tspan x="0" dy="-0.6em">word</tspan><tspan x="0" dy="1.2em">→</tspan>
 </text>
 </g>
 <g transform="translate(785, 183) rotate(-5.0)" class="key keypos-35">
@@ -865,15 +865,19 @@ g.layer-L1 g.keypos-35 text.tap {
 </g>
 <g transform="translate(548, 49) rotate(-5.0)" class="key keypos-7">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">F7</text>
 </g>
 <g transform="translate(603, 30) rotate(-5.0)" class="key keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">F8</text>
 </g>
 <g transform="translate(660, 39) rotate(-5.0)" class="key keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">F9</text>
 </g>
 <g transform="translate(718, 62) rotate(-5.0)" class="key keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">F12</text>
 </g>
 <g transform="translate(775, 71) rotate(-5.0)" class="key keypos-11">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>

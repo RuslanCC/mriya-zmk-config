@@ -96,9 +96,9 @@ layers:
   - ^
   - '&'
   - '*'
-  - (
-  - )
+  - '['
   - ']'
+  - _
   - ''
   - ⌥
   - ⌃
@@ -108,15 +108,15 @@ layers:
   - '`'
   - '{'
   - '}'
-  - '['
-  - ']'
+  - (
+  - )
   - '"'
   - ''
   - \
   - <
   - '>'
   - '~'
-  - _
+  - 🌐 Fn
   - {t: 📸, type: macro}
   - '-'
   - '='
@@ -141,7 +141,7 @@ layers:
   - ↑
   - End
   - PgUp
-  - {t: ⌘⇥, type: mouse}
+  - ''
   - ''
   - {t: ◀ Back, type: mouse}
   - {t: ◀, type: mouse}
@@ -153,7 +153,7 @@ layers:
   - ↓
   - →
   - PgDn
-  - {t: ⌘⇧⇥, type: mouse}
+  - ''
   - {t: L4, h: toggle}
   - ''
   - ''
@@ -161,10 +161,10 @@ layers:
   - ''
   - ''
   - ''
-  - {t: ⌥ word ←, type: mouse}
-  - {t: ⌘ line ←, type: mouse}
-  - {t: line → ⌘, type: mouse}
-  - {t: word → ⌥, type: mouse}
+  - {t: ← word, type: mouse}
+  - {t: ← line, type: mouse}
+  - {t: line →, type: mouse}
+  - {t: word →, type: mouse}
   - ''
   - ''
   - {type: held}
@@ -180,10 +180,10 @@ layers:
   - OUT TOG
   - {t: BT, h: '0'}
   - {t: BT, h: '3'}
-  - ''
-  - ''
-  - ''
-  - ''
+  - F7
+  - F8
+  - F9
+  - F12
   - ''
   - ''
   - ''
