@@ -61,6 +61,8 @@ parse_config:
     "&yandex": {t: "✉ ya", type: macro}
     "&telegram": {t: "✉ tg", type: macro}
     "&mailmgpu": {t: "✉ mgpu", type: macro}
+    "&kp LG(PLUS)": {t: "⌘ +"}
+    "&kp LG(MINUS)": {t: "⌘ −"}
   zmk_keycode_map:
     UP: "↑"
     DOWN: "↓"
