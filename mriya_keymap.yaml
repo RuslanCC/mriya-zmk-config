@@ -103,7 +103,7 @@ layers:
     - {type: held}
     - ⌫
   L3:
-  - - {t: L3, h: toggle}
+  - - {t: L5, h: toggle}
     - {t: Fwd ▶, type: mouse}
     - {t: RClk, type: mouse}
     - {t: ▲, type: mouse}
@@ -181,6 +181,49 @@ layers:
     - ''
     - ''
     - BT CLR ALL
+    - ''
+  - - ␣
+    - {t: Base, h: toggle}
+    - ⇥
+    - ↵
+    - {t: Base, h: toggle}
+    - ⌫
+  L5:
+  - - {t: Base, h: toggle}
+    - {t: Fwd ▶, type: mouse}
+    - {t: RClk, type: mouse}
+    - {t: ▲, type: mouse}
+    - {t: LClk, type: mouse}
+    - {t: Scr ▲, type: mouse}
+    - ''
+    - Home
+    - ↑
+    - End
+    - PgUp
+    - ''
+  - - {t: Base, h: toggle}
+    - {t: ◀ Back, type: mouse}
+    - {t: ◀, type: mouse}
+    - {t: ▼, type: mouse}
+    - {t: ▶, type: mouse}
+    - {t: Scr ▼, type: mouse}
+    - ''
+    - ←
+    - ↓
+    - →
+    - PgDn
+    - ''
+  - - {t: L4, h: toggle}
+    - ''
+    - ''
+    - {t: MClk, type: mouse}
+    - ''
+    - {t: 😀, type: macro}
+    - {t: 📸, type: macro}
+    - {t: ← word, type: mouse}
+    - {t: ← line, type: mouse}
+    - {t: line →, type: mouse}
+    - {t: word →, type: mouse}
     - ''
   - - ␣
     - {t: Base, h: toggle}
