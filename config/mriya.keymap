@@ -193,7 +193,7 @@
 //                         │Space │Trns  │ Tab  │     │ Ret  │Trns  │Bspc  │
 //                         └──────┴──────┴──────┘     └──────┴──────┴──────┘
             bindings = <
-&to 3   &mkp MB5    &mkp RCLK     &mmv MOVE_UP     &mkp LCLK      &msc SCRL_UP     &none   &kp HOME       &kp UP        &kp END          &kp PG_UP     &none
+&tog 3  &mkp MB5    &mkp RCLK     &mmv MOVE_UP     &mkp LCLK      &msc SCRL_UP     &none   &kp HOME       &kp UP        &kp END          &kp PG_UP     &none
 &to 0   &mkp MB4    &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_RIGHT &msc SCRL_DOWN  &none   &kp LEFT       &kp DOWN      &kp RIGHT        &kp PG_DN     &none
 &to 4   &none       &none         &mkp MCLK        &none          &kp LC(LG(SPACE)) &kp LC(LG(N9))  &kp LA(LEFT)   &kp LG(LEFT)  &kp LG(RIGHT)    &kp LA(RIGHT) &none
                                   &kp SPACE        &trans         &kp TAB          &kp RET &trans         &kp BSPC

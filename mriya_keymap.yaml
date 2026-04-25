@@ -1,217 +1,190 @@
 layout: {zmk_keyboard: mriya}
 layers:
   Base:
-  - Esc
-  - Q
-  - W
-  - E
-  - R
-  - {t: T, h: '`'}
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - '['
-  - Caps
-  - {t: A, h: ⌥}
-  - {t: S, h: ⌃}
-  - {t: D, h: ⌘}
-  - {t: F, h: ⇧}
-  - G
-  - H
-  - {t: J, h: ⇧}
-  - {t: K, h: ⌘}
-  - {t: L, h: ⌃}
-  - {t: ;, h: ⌥}
-  - ''''
-  - '-'
-  - {t: Z, h: Gui+Z}
-  - {t: X, h: Gui+X}
-  - {t: C, h: Gui+C}
-  - {t: V, h: Gui+V}
-  - B
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - ']'
-  - ␣
-  - L1
-  - ⇥
-  - ↵
-  - L2
-  - ⌫
+  - - Esc
+    - Q
+    - W
+    - E
+    - R
+    - {t: T, h: '`'}
+    - Y
+    - U
+    - I
+    - O
+    - P
+    - '['
+  - - Caps
+    - {t: A, h: ⌥}
+    - {t: S, h: ⌃}
+    - {t: D, h: ⌘}
+    - {t: F, h: ⇧}
+    - G
+    - H
+    - {t: J, h: ⇧}
+    - {t: K, h: ⌘}
+    - {t: L, h: ⌃}
+    - {t: ;, h: ⌥}
+    - ''''
+  - - '-'
+    - {t: Z, h: Gui+Z}
+    - {t: X, h: Gui+X}
+    - {t: C, h: Gui+C}
+    - {t: V, h: Gui+V}
+    - B
+    - N
+    - M
+    - ','
+    - .
+    - /
+    - ']'
+  - [␣, L1, ⇥, ↵, L2, ⌫]
   L1:
-  - ''
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - {t: '7', s: '?'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - F11
-  - '!'
-  - ''
-  - ⌥
-  - ⌃
-  - ⌘
-  - ⇧
-  - F10
-  - '*'
-  - {t: '4', s: ;}
-  - {t: '5', s: '%'}
-  - {t: '6', s: ':'}
-  - {t: '0', s: )}
-  - +
-  - ''
-  - 🔇
-  - 🔊−
-  - 🔊+
-  - ⏯
-  - ⏭
-  - /
-  - {t: '1', s: '!'}
-  - {t: '2', s: '"'}
-  - {t: '3', s: №}
-  - ','
-  - '?'
-  - ''
-  - {type: held}
-  - ''
-  - ''
-  - L3
-  - ''
+  - - ⌘ +
+    - F1
+    - F2
+    - F3
+    - F4
+    - F5
+    - F6
+    - {t: '7', s: '?'}
+    - {t: '8', s: '*'}
+    - {t: '9', s: (}
+    - F11
+    - '!'
+  - - ⌘ −
+    - ⌥
+    - ⌃
+    - ⌘
+    - ⇧
+    - F10
+    - '*'
+    - {t: '4', s: ;}
+    - {t: '5', s: '%'}
+    - {t: '6', s: ':'}
+    - {t: '0', s: )}
+    - +
+  - - ⏮
+    - 🔇
+    - 🔊−
+    - 🔊+
+    - ⏯
+    - ⏭
+    - /
+    - {t: '1', s: '!'}
+    - {t: '2', s: '"'}
+    - {t: '3', s: №}
+    - ','
+    - '?'
+  - - ␣
+    - {type: held}
+    - ⇥
+    - ↵
+    - L3
+    - ⌫
   L2:
-  - ''
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - '['
-  - ']'
-  - _
-  - ''
-  - ⌥
-  - ⌃
-  - ⌘
-  - ⇧
-  - '|'
-  - '`'
-  - '{'
-  - '}'
-  - (
-  - )
-  - '"'
-  - ''
-  - \
-  - <
-  - '>'
-  - '~'
-  - {t: 😀, type: macro}
-  - {t: 📸, type: macro}
-  - '-'
-  - '='
-  - /
-  - '?'
-  - +
-  - ''
-  - L3
-  - ''
-  - ''
-  - {type: held}
-  - ''
+  - ['', '!', '@', '#', $, '%', ^, '&', '*', '[', ']', _]
+  - ['', ⌥, ⌃, ⌘, ⇧, '|', '`', '{', '}', (, ), '"']
+  - - ''
+    - \
+    - <
+    - '>'
+    - '~'
+    - {t: 😀, type: macro}
+    - {t: 📸, type: macro}
+    - '-'
+    - '='
+    - /
+    - '?'
+    - +
+  - - ␣
+    - L3
+    - ⇥
+    - ↵
+    - {type: held}
+    - ⌫
   L3:
-  - ''
-  - {t: Fwd ▶, type: mouse}
-  - {t: RClk, type: mouse}
-  - {t: ▲, type: mouse}
-  - {t: LClk, type: mouse}
-  - {t: Scr ▲, type: mouse}
-  - ''
-  - Home
-  - ↑
-  - End
-  - PgUp
-  - ''
-  - ''
-  - {t: ◀ Back, type: mouse}
-  - {t: ◀, type: mouse}
-  - {t: ▼, type: mouse}
-  - {t: ▶, type: mouse}
-  - {t: Scr ▼, type: mouse}
-  - ''
-  - ←
-  - ↓
-  - →
-  - PgDn
-  - ''
-  - {t: L4, h: toggle}
-  - ''
-  - ''
-  - {t: MClk, type: mouse}
-  - ''
-  - {t: 😀, type: macro}
-  - {t: 📸, type: macro}
-  - {t: ← word, type: mouse}
-  - {t: ← line, type: mouse}
-  - {t: line →, type: mouse}
-  - {t: word →, type: mouse}
-  - ''
-  - ''
-  - {type: held}
-  - ''
-  - ''
-  - {type: held}
-  - ''
+  - - {t: L3, h: toggle}
+    - {t: Fwd ▶, type: mouse}
+    - {t: RClk, type: mouse}
+    - {t: ▲, type: mouse}
+    - {t: LClk, type: mouse}
+    - {t: Scr ▲, type: mouse}
+    - ''
+    - Home
+    - ↑
+    - End
+    - PgUp
+    - ''
+  - - {t: Base, h: toggle}
+    - {t: ◀ Back, type: mouse}
+    - {t: ◀, type: mouse}
+    - {t: ▼, type: mouse}
+    - {t: ▶, type: mouse}
+    - {t: Scr ▼, type: mouse}
+    - ''
+    - ←
+    - ↓
+    - →
+    - PgDn
+    - ''
+  - - {t: L4, h: toggle}
+    - ''
+    - ''
+    - {t: MClk, type: mouse}
+    - ''
+    - {t: 😀, type: macro}
+    - {t: 📸, type: macro}
+    - {t: ← word, type: mouse}
+    - {t: ← line, type: mouse}
+    - {t: line →, type: mouse}
+    - {t: word →, type: mouse}
+    - ''
+  - - ␣
+    - {type: held}
+    - ⇥
+    - ↵
+    - {type: held}
+    - ⌫
   L4:
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: USB⇄BT, type: system}
-  - {t: BT, h: '0'}
-  - {t: BT, h: '3'}
-  - F7
-  - F8
-  - F9
-  - F12
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: BT, h: '1'}
-  - {t: BT, h: '4'}
-  - {t: ✉ mail, type: macro}
-  - {t: ✉ ya, type: macro}
-  - {t: ✉ tg, type: macro}
-  - {t: ✉ mgpu, type: macro}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - BT CLR
-  - {t: BT, h: '2'}
-  - ''
-  - ''
-  - ''
-  - ''
-  - BT CLR ALL
-  - ''
-  - ''
-  - {t: Base, h: toggle}
-  - ''
-  - ''
-  - {t: Base, h: toggle}
-  - ''
+  - - ''
+    - ''
+    - ''
+    - ''
+    - {t: USB⇄BT, type: system}
+    - {t: BT, h: '0'}
+    - {t: BT, h: '3'}
+    - F7
+    - F8
+    - F9
+    - F12
+    - ''
+  - - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - {t: BT, h: '1'}
+    - {t: BT, h: '4'}
+    - {t: ✉ mail, type: macro}
+    - {t: ✉ ya, type: macro}
+    - {t: ✉ tg, type: macro}
+    - {t: ✉ mgpu, type: macro}
+    - ''
+  - - ''
+    - ''
+    - ''
+    - ''
+    - BT CLR
+    - {t: BT, h: '2'}
+    - ''
+    - ''
+    - ''
+    - ''
+    - BT CLR ALL
+    - ''
+  - - ␣
+    - {t: Base, h: toggle}
+    - ⇥
+    - ↵
+    - {t: Base, h: toggle}
+    - ⌫
