@@ -213,7 +213,7 @@ layers:
     - →
     - PgDn
     - ''
-  - - {t: L4, h: toggle}
+  - - ''
     - ''
     - ''
     - {t: MClk, type: mouse}
