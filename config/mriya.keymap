@@ -149,13 +149,13 @@
 // ├──────┼──────┼──────┼──────┼──────┼──────┤     ├──────┼──────┼──────┼──────┼──────┼──────┤
 // │Prev  │Mute  │Vol-  │Vol+  │Play  │Next  │     │  /   │  1   │  2   │  3   │,(ru) │?(ru) │
 // └──────┴──────┴──────┴──┬───┴──┬───┴──┬───┘     └──┬───┴──┬───┴──┬───┴──────┴──────┴──────┘
-//                         │      │Trns  │      │     │      │ L3   │      │
+//                         │Space │Trns  │ Tab  │     │ Ret  │ L3   │Bspc  │
 //                         └──────┴──────┴──────┘     └──────┴──────┴──────┘
             bindings = <
 &kp LG(PLUS)   &kp F1      &kp F2        &kp F3        &kp F4        &kp F5      &kp F6       &kp N7  &kp N8  &kp N9     &kp F11  &kp LS(N1)
 &kp LG(MINUS)  &kp LALT    &kp LCTRL     &kp LGUI      &kp LSHFT     &kp F10     &kp KP_ASTERISK  &kp N4  &kp N5  &kp N6     &kp N0   &kp PLUS
 &kp C_PREV     &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP      &kp C_NEXT  &kp FSLH     &kp N1  &kp N2  &kp N3     &kp LS(FSLH) &kp LS(N7)
-                                  &none         &trans        &none       &none        &mo 3   &none
+                                  &kp SPACE     &trans        &kp TAB     &kp RET      &mo 3   &kp BSPC
             >;
         };
 
@@ -169,14 +169,14 @@
 // ├──────┼──────┼──────┼──────┼──────┼──────┤     ├──────┼──────┼──────┼──────┼──────┼──────┤
 // │      │  \   │  <   │  >   │  ~   │ 😀   │     │ Scrn │  -   │  =   │  /   │  ?   │  +   │
 // └──────┴──────┴──────┴──┬───┴──┬───┴──┬───┘     └──┬───┴──┬───┴──┬───┴──────┴──────┴──────┘
-//                         │      │ L3   │      │     │      │Trns  │      │
+//                         │Space │ L3   │ Tab  │     │ Ret  │Trns  │Bspc  │
 //                         └──────┴──────┴──────┘     └──────┴──────┴──────┘
 // (№ = ⌘⇧3 в русской раскладке macOS)
             bindings = <
 &none   &kp EXCL   &kp AT     &kp HASH   &kp DLLR    &kp PRCNT    &kp CARET      &kp AMPS   &kp ASTRK  &kp LBKT  &kp RBKT   &kp UNDER
 &none   &kp LALT   &kp LCTRL  &kp LGUI   &kp LSHFT   &kp PIPE     &kp GRAVE      &kp LBRC   &kp RBRC   &kp LPAR  &kp RPAR      &kp DQT
 &none   &kp BSLH   &kp LT     &kp GT     &kp TILDE   &kp LC(LG(SPACE)) &kp LC(LG(N9)) &kp MINUS  &kp EQUAL  &kp FSLH  &kp QMARK  &kp PLUS
-                              &none      &mo 3       &none        &none          &trans     &none
+                              &kp SPACE  &mo 3       &kp TAB      &kp RET        &trans     &kp BSPC
             >;
         };
 
@@ -184,19 +184,19 @@
             display-name = "L3";
 // MOUSE (left) / NAVIGATION (right)
 // ┌──────┬──────┬──────┬──────┬──────┬──────┐     ┌──────┬──────┬──────┬──────┬──────┬──────┐
-// │      │ MB5  │RClk  │ M↑   │LClk  │Scr↑  │     │      │Home  │ ↑    │End   │PgUp  │      │
+// │ToL3  │ MB5  │RClk  │ M↑   │LClk  │Scr↑  │     │      │Home  │ ↑    │End   │PgUp  │      │
 // ├──────┼──────┼──────┼──────┼──────┼──────┤     ├──────┼──────┼──────┼──────┼──────┼──────┤
-// │      │ MB4  │ M←   │ M↓   │ M→   │Scr↓  │     │      │ ←    │ ↓    │ →    │PgDn  │      │
+// │ToL0  │ MB4  │ M←   │ M↓   │ M→   │Scr↓  │     │      │ ←    │ ↓    │ →    │PgDn  │      │
 // ├──────┼──────┼──────┼──────┼──────┼──────┤     ├──────┼──────┼──────┼──────┼──────┼──────┤
 // │ToL4  │      │      │MClk  │      │ 😀   │     │ Scrn │⌥←    │⌘←    │⌘→    │⌥→    │      │
 // └──────┴──────┴──────┴──┬───┴──┬───┴──┬───┘     └──┬───┴──┬───┴──┬───┴──────┴──────┴──────┘
-//                         │      │Trns  │      │     │      │Trns  │      │
+//                         │Space │Trns  │ Tab  │     │ Ret  │Trns  │Bspc  │
 //                         └──────┴──────┴──────┘     └──────┴──────┴──────┘
             bindings = <
-&none   &mkp MB5    &mkp RCLK     &mmv MOVE_UP     &mkp LCLK      &msc SCRL_UP     &none   &kp HOME       &kp UP        &kp END          &kp PG_UP     &none
-&none   &mkp MB4    &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_RIGHT &msc SCRL_DOWN  &none   &kp LEFT       &kp DOWN      &kp RIGHT        &kp PG_DN     &none
+&to 3   &mkp MB5    &mkp RCLK     &mmv MOVE_UP     &mkp LCLK      &msc SCRL_UP     &none   &kp HOME       &kp UP        &kp END          &kp PG_UP     &none
+&to 0   &mkp MB4    &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_RIGHT &msc SCRL_DOWN  &none   &kp LEFT       &kp DOWN      &kp RIGHT        &kp PG_DN     &none
 &to 4   &none       &none         &mkp MCLK        &none          &kp LC(LG(SPACE)) &kp LC(LG(N9))  &kp LA(LEFT)   &kp LG(LEFT)  &kp LG(RIGHT)    &kp LA(RIGHT) &none
-                                  &none            &trans         &none            &none   &trans         &none
+                                  &kp SPACE        &trans         &kp TAB          &kp RET &trans         &kp BSPC
             >;
         };
 
@@ -210,13 +210,13 @@
 // ├──────┼──────┼──────┼──────┼──────┼──────┤     ├──────┼──────┼──────┼──────┼──────┼──────┤
 // │      │      │      │      │BTclr │ BT3  │     │      │      │      │      │BTclrA│      │
 // └──────┴──────┴──────┴──┬───┴──┬───┴──┬───┘     └──┬───┴──┬───┴──┬───┴──────┴──────┴──────┘
-//                         │      │ToL0  │      │     │      │ToL0  │      │
+//                         │Space │ToL0  │ Tab  │     │ Ret  │ToL0  │Bspc  │
 //                         └──────┴──────┴──────┘     └──────┴──────┴──────┘
             bindings = <
 &none       &none        &none  &none  &out OUT_TOG &bt BT_SEL 0      &bt BT_SEL 3  &kp F7      &kp F8      &kp F9         &kp F12         &none
 &none       &none        &none  &none  &none        &bt BT_SEL 1      &bt BT_SEL 4  &mail       &yandex     &telegram      &mailmgpu       &none
 &none       &none        &none  &none  &bt BT_CLR   &bt BT_SEL 2      &none         &none       &none       &none          &bt BT_CLR_ALL  &none
-                                &none  &to 0        &none             &none         &to 0       &none
+                                &kp SPACE &to 0     &kp TAB           &kp RET       &to 0       &kp BSPC
             >;
         };
     };
